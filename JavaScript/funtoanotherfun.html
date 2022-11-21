@@ -1,0 +1,21 @@
+/*Storing functions in variables and Passing a function to another function */
+
+<html>
+<body>
+<script>
+  function add(a,b){
+    return a+b;
+  }
+  var sum=add;
+  function average(a,b,fn){
+    return fn(a,b)/2;
+  }
+
+  var result=average(10,20,sum);
+  console.log("result:" +result);
+
+</script>
+
+</body>
+
+</html>

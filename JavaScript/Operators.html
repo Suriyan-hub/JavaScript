@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+const operator=prompt('Enter operator to perform the calculation ( either +, -, * or / ): ');    
+const n1=parseFloat(prompt('enter the first number'));
+const n2=parseFloat(prompt('enter the second number'));  
+    let res;
+    if(operator=='+')
+        {
+            res=n1+n2;
+        }
+    else if(operator=='-')
+        {
+            res=n1-n2;
+        }
+    else if(operator=='*')
+        {
+            res=n1*n2;
+        }
+    else
+        {
+            res=n1/n2;
+        }
+    window.alert("Result is"+res);
+</script>    
+    
+</body>
+
+
+</html>

@@ -1,0 +1,16 @@
+<html>
+<head></head>
+    <body>
+    <script>
+        document.write("Object Constructor");
+        function stud(rno,name,mark){
+          this.rno=rno;
+          this.name=name;
+            this.mark=mark;
+        }
+         s=new stud(1,"Anu",80);
+        document.writeln("Student information <br><br>");
+        document.write("Rollno: "+s.rno+"<br><br>" +"Name: "+s.name+"<br><br>"+"Mark:"+s.mark);
+    </script>
+    </body>
+</html>

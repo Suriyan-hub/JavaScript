@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            console.log("Anonymous function");
+           /* var show=function(){
+                console.log('Anonymous function');
+            };*/
+            var show=() => console.log("function");
+            function say(message='hello'){
+                console.log(message);
+            }
+            function add(a=1,b=2){
+                return a+b;
+
+            }
+            console.log(add(10,20));
+            console.log(add());
+            say('hi')
+            say();
+            show();
+        </script>
+    </body>
+</html>

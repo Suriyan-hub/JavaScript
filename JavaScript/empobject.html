@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+            let emp={
+                empid:100,
+                empname:'Jishnu',
+                empsalary:25000
+            };
+            console.log("Access through the dot notation (.)")
+            console.log(emp.empid);
+            console.log(emp.empname);
+            console.log(emp.empsalary);
+
+            console.log("Modifying the property value");
+            emp.empname='Priya';
+            console.log("Acess through the Array-like notation ( [])");
+            console.log(emp['empid']);
+            console.log(emp['empname']);
+            console.log(emp['empsalary']);
+
+            console.log("Adding the new property");
+            emp.age = 25;
+            console.log(emp.empid);
+            console.log(emp.empname);
+            console.log(emp.empsalary);
+            console.log(emp.age);
+
+            console.log("Delete the property");
+            console.log(delete emp.age);
+             console.log("reaccess the age property "+emp.age);
+           
+             console.log("Checking if a property exists using in operator");
+             console.log('age' in emp);
+             console.log('empid' in emp);
+
+             console.log(emp);
+
+        </script>
+    </body>
+</html>
