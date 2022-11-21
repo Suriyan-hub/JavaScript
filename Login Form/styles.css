@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "p";
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #efa4ea, #3f4692 75%);
+}
+::selection {
+  color: #fff;
+  background: #5372f0;
+}
+.wrapper {
+  width: 380px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 40px 30px 50px 30px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.wrapper header {
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper #login-form {
+  margin: 40px 0;
+}
+form .field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form .field .input-area {
+  position: relative;
+}
+form input {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+}
+form .field.error input {
+  border-color: #dc3545;
+}
+form input::placeholder {
+  color: #bfbfbf;
+  font-size: 17px;
+}
+form .field i {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field .icon {
+  left: 15px;
+  color: #bfbfbf;
+}
+form .field .error-icon {
+  color: #dc3545;
+  right: 15px;
+}
+/* form .field .error-txt {
+  color: #dc3545;
+  margin-top: 5px;
+  text-align: left;
+}*/
+form .field .error {
+  display: none;
+}
+form .field .error .error {
+  display: block;
+}
+form .pass-txt {
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a {
+  color: #5372f0;
+  text-decoration: none;
+}
+.wrapper a:hover {
+  text-decoration: underline;
+}
+form input[type="submit"] {
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background: hsla(297, 78%, 38%, 0.778);
+  transition: background 02s ease;
+}
+form input[type="submit"]:hover {
+  background: #b5bee2;
+}
